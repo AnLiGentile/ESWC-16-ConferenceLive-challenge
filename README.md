@@ -94,3 +94,8 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 - [Andrea Giovanni Nuzzolese](http://www.cs.unibo.it/~nuzzoles/), STLab-CNR, Italy
 - [Valentina Presutti](http://stlab.istc.cnr.it/stlab/User:ValentinaPresutti), STLab-CNR, Italy
 
+# Program Committee
+
+To be announced.
+
+
