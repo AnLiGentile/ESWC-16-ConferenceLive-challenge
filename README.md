@@ -15,8 +15,8 @@ The application, called Conference Live, is a Web and mobile application based o
 1. A **summary** description (abstract) of up to 200 words;
 2. A **paper** presenting the details of the implemented method, which discusses its novelty (if applicable), and highlights its strengths and weaknesses;
 3. **Web Access**: the Web application must be fully implemented and the code must be accessible either via the Web (e.g github) or downloadable. In particular, the application should be:
-- Open Source
-- compatible with [Cordova framework](https://cordova.apache.org/)
+  - Open Source
+  - compatible with [Cordova framework](https://cordova.apache.org/)
 
 
 Important Dates
