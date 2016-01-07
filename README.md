@@ -1,5 +1,4 @@
 # ESWC-16 Conference Live app Challenge
-=========
 
 This folder contains guidelines and materials for the Conference Live app Challenge at ESWC 2016.
 
@@ -19,8 +18,7 @@ The application, called Conference Live, is a Web and mobile application based o
   - compatible with [Cordova framework](https://cordova.apache.org/)
 
 
-Important Dates
-=========
+# Important Dates
 
 - Challenge **papers** and **systems** submission deadline: Friday March 11th, 2016
 - Challenge paper **reviews due**: Tuesday April 5th, 2016
@@ -33,8 +31,7 @@ The **Notification** will already declare the winning system, which will be dist
 If a winning system cannot be proclaimed (e.g. all submissions fail to meet the minimum requisites) the metadata chair will provide a Conference Live baseline system.
 
 
-Task Overview
-=========
+# Task Overview
 
 ## Task Description
 
@@ -54,7 +51,7 @@ Requirements 1-5 are essential, a system which doesn’t implement any of these 
 
 ## Dataset and available services
 
-## Past conference data 
+### Past conference data 
 In order to facilitate the system development, we provide data from the past two editions of ESWC.
 These data is enriched with social features (e.g. integrated Twitter accounts of paper authors) and scheduling features (calendar information are attached for paper presentations and social events).
 Two rdf dumps are available:
@@ -66,21 +63,34 @@ Two rdf dumps are available:
 We provide a backend service to vote for publications. 
 The voting service is implemented as a REST service.
 To save a user vote, it is sufficient to send a GET query with three parameters: <paper-number> <paper-track> <secret-code> in the form: curl -G -X
-GET -d id=PAPER NUMBER -d track=PAPER TRACK -d code=USER SECRET CODE http://wit.istc.cnr.it/eswc2015/vote
+GET -d id=PAPER NUMBER -d track=PAPER TRACK -d code=USER SECRET CODE
 The <paper-id> is generated internally by the service, concatenating <paper- track> and <paper-number>
-- IF the vote is cast correctly the response is an HTTP status code 200, with an extra json file as output, which simply contains the following content ”status”: ”ok”
+- IF the vote is cast correctly the response is an HTTP status code 200, with an extra json file as output, which simply contains the following content "status":"ok"
 - IF <secrect-code> has been used already for voting the best paper of a track, there is a CONFLICT ERROR CODE is: HTTP status code 409
 - IF either the <paper-id> or the <secrect-code> do not exist ERROR CODE is: HTTP status code 404
-- IF there is a syntactic error (parsing of the query string) caused by either the <paper-id> or by the <secrect-code>, there is a PRECON- DITION FAILED ERROR CODE is: HTTP status code 412
+- IF there is a syntactic error (parsing of the query string) caused by either the <paper-id> or by the <secrect-code>, there is a PRECONDITION FAILED ERROR CODE is: HTTP status code 412
 
 For testing purposes we provide:
 - a voting service for each provided dataset:
-  - [ESWC-15](http://wit. istc.cnr.it/eswc2015/vote)
-  - [ESWC-14](http://wit.istc.cnr. it/eswc2014/vote)
+  - [ESWC-15](http://wit.istc.cnr.it/eswc2015/vote)
+  - [ESWC-14](http://wit.istc.cnr.it/eswc2014/vote)
 - a pool of valid secret codes as a [txt file](./voting_resources/voting_tokens.txt). The actual secret codes will be an alpha-numeric string, in the range [a-zA-Z0-9]
 - a tool to verify currently saved votes for each provided dataset:
-  - [ESWC-15](http://wit. istc.cnr.it/eswc2015/vote/list)
-  - [ESWC-14](http://wit.istc.cnr. it/eswc2014/vote/list)
+  - [ESWC-15](http://wit.istc.cnr.it/eswc2015/vote/list)
+  - [ESWC-14](http://wit.istc.cnr.it/eswc2014/vote/list)
 
 
+#Evaluation
+
+We will define two evaluations:
+- implementation of requirements: the challenge organizers will score each of the requirements with a vote from 0 to 3, where 0 means not implemented, 1 partially implemented, 2 fully implemented, 3 outstanding implementation. The final vote will be a linear combination of the votes for each requirements.
+- usability: a goal oriented evaluation will be carried out. Participants will we asked to complete tasks such as finding the time of a presentation, finding the author of a publication, voting for best poster/demo and then complete a questionnaire in order to record the [System Usability Scale (SUS)](http://cui.unige.ch/isi/icle-wiki/_media/ipm:test-suschapt.pdf). The SUS is a metric used for evaluating the usability of a system and it is technology-independent, and reliable even with a very small sample size.
+For a system to be evaluated we ask the participants to strictly meet requirement R2 and potentially provide the application already packaged as an Apache Cordova Web App.
+
+
+# Organising Committee
+
+- [Anna Lisa Gentile](http://dws.informatik.uni-mannheim.de/en/people/researchers/annalisa/), University of Mannheim, Germany
+- [Andrea Giovanni Nuzzolese](http://www.cs.unibo.it/~nuzzoles/), STLab-CNR, Italy
+- [Valentina Presutti](http://stlab.istc.cnr.it/stlab/User:ValentinaPresutti), STLab-CNR, Italy
 
