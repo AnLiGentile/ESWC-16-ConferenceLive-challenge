@@ -32,3 +32,55 @@ Important Dates
 The **Notification** will already declare the winning system, which will be distributed by [Conference Live](https://play.google.com/store/apps/developer?id=Conference+Live) as the official ESWC-16 App. 
 If a winning system cannot be proclaimed (e.g. all submissions fail to meet the minimum requisites) the metadata chair will provide a Conference Live baseline system.
 
+
+Task Overview
+=========
+
+## Task Description
+
+The task consist in implementing a system that allows the navigation of ESWC-16 semantic metadata. The system should satisfy the following requirements:
+
+1. Availability: be Open Source.
+2. Implementation: compatible with [Cordova framework](https://cordova.apache.org/).
+3. Voting: enable voting for poster and demo through the REST service provided by the organizers (details on the service are provided to participants).
+4. Browsing: the system must provide a mechanism to browse papers and authors at the conference. The system will exploit the Linked Data of the conference provided as input for providing effective App-based visualisations of conference related knowledge, including basic information (author names, affiliations, paper titles...), roles covered by each person at the conference and additional data including: author picture, author additional contacts (e.g. social media account), thumbnail for each paper. Additional data might or might not be available for all persons/papers. The system must handle the null cases.
+5. Scheduling: the system must provide to the users the conference calendar with the scheduling of events (either social or academic) and paper presentations.
+6. Social: provide social functionalities and access to social channels (e.g., Twitter, ResearchGate, etc.) for enabling/improving scholarly net- working and interaction.
+7. Proceedings: enable accessing to the conference proceedings
+8. Enrichment: enable data enrichment from external and potentially heterogeneous sources. For example, the App could gather authors’ publications and other information related to their scholarly activity (e.g., social accounts or personal webpages) from Open Linked Data or Open Source API.
+
+
+Requirements 1-5 are essential, a system which doesn’t implement any of these will be disqualified. Requirements 6-8 are preferable and will constitute added value. For implementation examples participants can refer to the systems used at [ESWC2014](http://oak.dcs.shef.ac.uk/eswc2014) and [ESWC2015](http://oak.dcs.shef.ac.uk/eswc2015). For an explanation on meeting the requirements they can refer to [Gentile et al. 2015](∫http://www.www2015.it/documents/proceedings/companion/p1007.pdf).
+
+## Dataset and available services
+
+## Past conference data 
+In order to facilitate the system development, we provide data from the past two editions of ESWC.
+These data is enriched with social features (e.g. integrated Twitter accounts of paper authors) and scheduling features (calendar information are attached for paper presentations and social events).
+Two rdf dumps are available:
+
+  - ESWC-14 metadata from [ESWC2014](./pastConferences_data/eswc2014.rdf)
+  - ESWC-15 metadata from [ESWC2015](./pastConferences_data/eswc2015.rdf)
+
+###Voting system 
+We provide a backend service to vote for publications. 
+The voting service is implemented as a REST service.
+To save a user vote, it is sufficient to send a GET query with three parameters: <paper-number> <paper-track> <secret-code> in the form: curl -G -X
+GET -d id=PAPER NUMBER -d track=PAPER TRACK -d code=USER SECRET CODE http://wit.istc.cnr.it/eswc2015/vote
+The <paper-id> is generated internally by the service, concatenating <paper- track> and <paper-number>
+- IF the vote is cast correctly the response is an HTTP status code 200, with an extra json file as output, which simply contains the following content ”status”: ”ok”
+- IF <secrect-code> has been used already for voting the best paper of a track, there is a CONFLICT ERROR CODE is: HTTP status code 409
+- IF either the <paper-id> or the <secrect-code> do not exist ERROR CODE is: HTTP status code 404
+- IF there is a syntactic error (parsing of the query string) caused by either the <paper-id> or by the <secrect-code>, there is a PRECON- DITION FAILED ERROR CODE is: HTTP status code 412
+
+For testing purposes we provide:
+- a voting service for each provided dataset:
+  - [ESWC-15](http://wit. istc.cnr.it/eswc2015/vote)
+  - [ESWC-14](http://wit.istc.cnr. it/eswc2014/vote)
+- a pool of valid secret codes as a [txt file](./voting_resources/voting_tokens.txt). The actual secret codes will be an alpha-numeric string, in the range [a-zA-Z0-9]
+- a tool to verify currently saved votes for each provided dataset:
+  - [ESWC-15](http://wit. istc.cnr.it/eswc2015/vote/list)
+  - [ESWC-14](http://wit.istc.cnr. it/eswc2014/vote/list)
+
+
+
