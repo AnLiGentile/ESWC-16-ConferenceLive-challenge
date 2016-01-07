@@ -27,7 +27,7 @@ The application, called Conference Live, is a Web and mobile application based o
 - **Camera ready** papers due: Sunday April 24th, 2016​
 
 
-The **Notification** will already declare the winning system, which will be distributed by [Conference Live](https://play.google.com/store/apps/developer?id=Conference+Live) as the official ESWC-16 App. 
+The notification will already declare the **winning system**, which will be **distributed by [Conference Live](https://play.google.com/store/apps/developer?id=Conference+Live) as the official ESWC-16 App**. 
 If a winning system cannot be proclaimed (e.g. all submissions fail to meet the minimum requisites) the metadata chair will provide a Conference Live baseline system.
 
 
