@@ -96,9 +96,9 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 
 # Program Committee
 
-[Aldo Gangemi](http://www.istc.cnr.it/people/aldo-gangemi), Université Paris 13, France
-[Suvodeep Mazumdar](http://staffwww.dcs.shef.ac.uk/people/S.Mazumdar), University of Sheffield, UK
-Christoph Pinkel, fluidOps, Germany
+- [Aldo Gangemi](http://www.istc.cnr.it/people/aldo-gangemi), Université Paris 13, France
+- [Suvodeep Mazumdar](http://staffwww.dcs.shef.ac.uk/people/S.Mazumdar), University of Sheffield, UK
+- Christoph Pinkel, fluidOps, Germany
 
 More to be announced
 
