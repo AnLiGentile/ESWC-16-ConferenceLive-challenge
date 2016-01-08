@@ -59,7 +59,7 @@ Two rdf dumps are available:
   - ESWC-14 metadata from [ESWC2014](./pastConferences_data/eswc2014.rdf)
   - ESWC-15 metadata from [ESWC2015](./pastConferences_data/eswc2015.rdf)
 
-###Voting system 
+### Voting system 
 We provide a backend service to vote for publications. 
 The voting service is implemented as a REST service.
 To save a user vote, it is sufficient to send a GET query with three parameters: <paper-number> <paper-track> <secret-code> in the form: curl -G -X
@@ -80,7 +80,7 @@ For testing purposes we provide:
   - [ESWC-14](http://wit.istc.cnr.it/eswc2014/vote/list)
 
 
-#Evaluation
+# Evaluation
 
 We will define two evaluations:
 - implementation of requirements: the challenge organizers will score each of the requirements with a vote from 0 to 3, where 0 means not implemented, 1 partially implemented, 2 fully implemented, 3 outstanding implementation. The final vote will be a linear combination of the votes for each requirements.
@@ -96,6 +96,7 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 
 # Program Committee
 
+- [Luca Costabello](http://luca.costabello.info/), Fujitsu Linked Data Research Team, Galway, Ireland
 - [Aldo Gangemi](http://www.istc.cnr.it/people/aldo-gangemi), Université Paris 13, France
 - [Suvodeep Mazumdar](http://staffwww.dcs.shef.ac.uk/people/S.Mazumdar), University of Sheffield, UK
 - Christoph Pinkel, fluidOps, Germany
