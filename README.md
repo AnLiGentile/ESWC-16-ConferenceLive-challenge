@@ -99,6 +99,7 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 - [Luca Costabello](http://luca.costabello.info/), Fujitsu Linked Data Research Team, Galway, Ireland
 - [Aldo Gangemi](http://www.istc.cnr.it/people/aldo-gangemi), Université Paris 13, France
 - [Suvodeep Mazumdar](http://staffwww.dcs.shef.ac.uk/people/S.Mazumdar), University of Sheffield, UK
+- [Lionel Médini](http://liris.cnrs.fr/lionel.medini/), Université Claude Bernard Lyon 1, France
 - Christoph Pinkel, fluidOps, Germany
 
 More to be announced
