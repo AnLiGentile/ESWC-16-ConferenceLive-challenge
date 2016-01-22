@@ -9,7 +9,7 @@ The application, called Conference Live, is a Web and mobile application based o
 - a backend service to vote for publications, if the conference includes sessions where participants can vote, as it is popular e.g. for poster and demo sessions.
 
 
-**Submissions** will consist of:
+**Submissions** (via [EasyChair](https://easychair.org/conferences/?conf=conferenceliveeswc16)) will consist of:
 
 1. A **summary** description (abstract) of up to 200 words;
 2. A **paper** presenting the details of the implemented method, which discusses its novelty (if applicable), and highlights its strengths and weaknesses;
