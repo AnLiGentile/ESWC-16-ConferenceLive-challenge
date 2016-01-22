@@ -97,6 +97,7 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 
 # Program Committee
 
+- [Maribel Acosta Deibe](http://www.aifb.kit.edu/web/Maribel_Acosta/en), KIT, Karlsruhe, Germany
 - [Luca Costabello](http://luca.costabello.info/), Fujitsu Linked Data Research Team, Galway, Ireland
 - [Mauro Dragoni](http://shell.fbk.eu/people/profile/dragoni), Fondazione Bruno Kessler, Trento, Italy
 - [Aldo Gangemi](http://www.istc.cnr.it/people/aldo-gangemi), Université Paris 13, France
