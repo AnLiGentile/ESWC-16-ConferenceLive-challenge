@@ -108,6 +108,4 @@ For a system to be evaluated we ask the participants to strictly meet requiremen
 - [Giuseppe Rizzo](http://giusepperizzo.github.io/), ISMB, Torino, Italy
 - [Raphaël Troncy](http://www.eurecom.fr/~troncy/), EURECOM, Sophia Antipolis, France
 
-More to be announced
-
 
