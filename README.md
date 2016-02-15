@@ -31,6 +31,8 @@ The application, called Conference Live, is a Web and mobile application based o
 The notification will already declare the **winning system**, which will be **distributed by [Conference Live](https://play.google.com/store/apps/developer?id=Conference+Live) as the official ESWC-16 App**. 
 If a winning system cannot be proclaimed (e.g. all submissions fail to meet the minimum requisites) the metadata chair will provide a Conference Live baseline system.
 
+Accepted challenge papers will be published by Springer in the [CCIS series](http://www.springer.com/series/7899). 
+The best challenge papers will be also published in the Satellite Event proceedings (a separate Springer LNCS Volume) of [ESWC2016](http://2016.eswc-conferences.org).
 
 # Task Overview
 
