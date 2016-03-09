@@ -20,7 +20,7 @@ The application, called Conference Live, is a Web and mobile application based o
 
 # Important Dates
 
-- Challenge **papers** and **systems** submission deadline: Friday March 11th, 2016
+- Challenge **papers** and **systems** submission deadline: Monday March 21st, 2016
 - Challenge paper **reviews due**: Tuesday April 5th, 2016
 - **Notifications** sent to participants: Friday April 8th, 2016
 - Final ESWC 2016 data published (for final test of the winning system): Friday April 8th, 2016
